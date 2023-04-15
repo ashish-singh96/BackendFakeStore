@@ -8,7 +8,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors());
 const databaseName = "fakeStore";
-const url = `mongodb://localhost:27017/${databaseName}`;
+const url = 'mongodb+srv://ashishbhadauriya5344:mxGwE7ZL5WPx9S3J@cluster0.nynqgrr.mongodb.net/?retryWrites=true&w=majority'
+// const url = `mongodb://localhost:27017/${databaseName}`;
 
 mongoose.connect(url, {
     useNewUrlParser: true,
